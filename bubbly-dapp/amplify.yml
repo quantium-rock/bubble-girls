@@ -3,7 +3,6 @@ frontend:
   phases:
     preBuild:
       commands:
-        - cd bubbly-dapp
         - npm install --global yarn
         - yarn add env-cmd
         - yarn global add serve
