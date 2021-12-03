@@ -79,8 +79,8 @@ frontend:
       commands:
         - cd bubbly-dapp
         - npm install --global yarn
-        - yarn install
         - yarn add env-cmd
+        - yarn install
     build:
       commands:
         - yarn run build:$BUILD_ENV
