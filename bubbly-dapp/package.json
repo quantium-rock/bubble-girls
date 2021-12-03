@@ -10,6 +10,7 @@
     "@types/react": "^17.0.37",
     "bootstrap": "^5.1.3",
     "caniuse-lite": "^1.0.30001283",
+    "env-cmd": "^10.1.0",
     "history": "5.1.0",
     "json-loader": "^0.5.7",
     "react": "^17.0.2",
@@ -30,8 +31,9 @@
     "web-vitals": "^2.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "env-cmd -f .env.production react-scripts start",
     "build": "react-scripts build",
+    "build:prod": "env-cmd -f .env.production react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -52,8 +54,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
   }
 }

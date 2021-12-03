@@ -1,0 +1,19 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd bubbly-dapp
+        - npm install --global yarn
+        - yarn install
+        - yarn add env-cmd
+    build:
+      commands:
+        - yarn run build:$BUILD_ENV
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+        - node_modules/**/*
