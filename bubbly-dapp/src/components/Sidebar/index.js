@@ -1,5 +1,6 @@
 import React from 'react';
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SidebarWalletBtn, SidebarWalletBtnRoute } from './SidebarElements';
+import Connect from '../Phantom/Connect';
 
 const Sidebar = ({ isOpen, toggle }) => {
     return (
@@ -9,20 +10,14 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink onClick={toggle} to="about">
+                    <SidebarLink onClick={toggle} to="1">
                         About
                     </SidebarLink>
-                    <SidebarLink onClick={toggle} to="rarities">
-                        Rarities
-                    </SidebarLink>
-                    <SidebarLink onClick={toggle} to="gamearn">
-                        Gamearn
-                    </SidebarLink>
-                    <SidebarLink onClick={toggle} to="roadmap">
+                    <SidebarLink onClick={toggle} to="2">
                         Roadmap
                     </SidebarLink>
                     <SidebarWalletBtn>
-                        <SidebarWalletBtnRoute onClick={toggle} to="/connect">Connect Wallet</SidebarWalletBtnRoute>
+                        <SidebarWalletBtnRoute onClick={Connect} to="/">Connect Wallet</SidebarWalletBtnRoute>
                     </SidebarWalletBtn>
                 </SidebarMenu>
             </SidebarWrapper>

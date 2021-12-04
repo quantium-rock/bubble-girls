@@ -76,7 +76,7 @@ export const SidebarWalletBtn = styled.div`
 `;
 
 export const SidebarWalletBtnRoute = styled(LinkR)`
-    background-image: linear-gradient(to right, ${COLORS.primary} 0%, ${COLORS.secondary}  51%, ${COLORS.tertiary}  100%);
+    background-image: linear-gradient(to right, ${COLORS.primary} 0%, ${COLORS.secondary}  90%, ${COLORS.tertiary}  130%);
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
@@ -97,6 +97,45 @@ export const SidebarWalletBtnRoute = styled(LinkR)`
     &:hover {
         background-position: right center;
         color: ${COLORS.black};
+        box-shadow: 0 0 14px ${COLORS.secondary};
+        text-decoration: none;
+    } 
+`;
+
+export const NavbarWalletBtn = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const NavbarWalletBtnRoute = styled(LinkR)`
+    background-image: linear-gradient(to right, ${COLORS.primary} 0%, ${COLORS.secondary}  90%, ${COLORS.tertiary}  130%);
+    margin: 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 150% auto;
+    color: ${COLORS.grey};            
+    box-shadow: 0 0 7px ${COLORS.primary};
+    border-radius: 50px;
+    display: block;
+    white-space: nowrap;
+    padding: 10px 22px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+
+
+    &:hover {
+        font-size: 16px;
+        background-position: right 200px;
+        color: ${COLORS.white2};
         box-shadow: 0 0 14px ${COLORS.secondary};
         text-decoration: none;
     } 
