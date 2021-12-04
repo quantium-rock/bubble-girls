@@ -16,29 +16,29 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Index</FooterLinkTitle>
-                            <FooterLink to='home'>Home</FooterLink>
-                            <FooterLink to='about'>About</FooterLink>
-                            <FooterLink to='roadmap'>Roadmap</FooterLink>                 
+                            <FooterLink to='/' onClick={toggleHome}>Home</FooterLink>
+                            <FooterLink to='1' smooth={true} duration={500} spy={true} exact="true" offset={-80}>About</FooterLink>
+                            <FooterLink to='2' smooth={true} duration={500} spy={true} exact="true" offset={-80}>Roadmap</FooterLink>                 
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Community</FooterLinkTitle>
-                            <FooterLink to='/'>Discord</FooterLink>
-                            <FooterLink to='/'>Twitter</FooterLink>
-                            <FooterLink to='/'>Reddit</FooterLink>                
+                            <FooterLink to='https://discord.gg/RESGyJNJzR'>Discord</FooterLink>
+                            <FooterLink to='https://www.twitter.com/bubblegirlsnfts'>Twitter</FooterLink>
+                            <FooterLink to='https://www.reddit.com/u/bubblegirlsnft'>Reddit</FooterLink>                
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Markets</FooterLinkTitle>
-                            <FooterLink to='/'>Solanart.io</FooterLink>
-                            <FooterLink to='/'>Margiceden.io</FooterLink>
-                            <FooterLink to='/'>Opensea.io</FooterLink>                  
+                            <FooterLink to='https://www.solanart.io'>Solanart.io</FooterLink>
+                            <FooterLink to='https://www.margicedeon.io'>Margiceden.io</FooterLink>
+                            <FooterLink to='https://www.opensea.com'>Opensea.com</FooterLink>                  
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Governance</FooterLinkTitle>
-                            <FooterLink to='/'>Terms</FooterLink>
-                            <FooterLink to='/'>Privacy</FooterLink>
-                            <FooterLink to='/'>Charity</FooterLink>             
+                            <FooterLink to='/' onClick={toggleHome}>Terms</FooterLink>
+                            <FooterLink to='/' onClick={toggleHome}>Privacy</FooterLink>
+                            <FooterLink to='/' onClick={toggleHome}>Charity</FooterLink>             
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
@@ -49,13 +49,13 @@ const Footer = () => {
                         </SocialLogo>
                         <WebsiteRights>BubbleGirls © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         <SocialIcons>
-                            <SocialIconLink href="//www.discord.com/" target="@0friendsclub" aria-label="Discord">
+                            <SocialIconLink href="https://discord.gg/RESGyJNJzR" target="_blank" aria-label="Discord">
                                 <FaDiscord />
                             </SocialIconLink>
-                            <SocialIconLink href="//www.twitter.com/" target="@0friendsclub" aria-label="Twitter">
+                            <SocialIconLink href="https://www.twitter.com/bubblegirlsnfts" target="_blank" aria-label="Twitter">
                                 <FaTwitter />
                             </SocialIconLink>
-                            <SocialIconLink href="//www.reddit.com/" target="_blank" aria-label="Reddit">
+                            <SocialIconLink href="https://www.reddit.com/u/bubblegirlsnft" target="_blank" aria-label="Reddit">
                                 <FaReddit />
                             </SocialIconLink>
                         </SocialIcons>

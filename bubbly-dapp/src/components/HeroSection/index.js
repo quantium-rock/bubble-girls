@@ -5,7 +5,6 @@ import { FaDiscord, FaTwitter, FaReddit } from 'react-icons/fa';
 import { InfoRow, SocialMedia, SocialMediaWrap, SocialIcons,  SocialIconLink, ImgWrapper } from './HeroElements';
 import img from '../../images/girl-front.png';
 
-
 function HeroSection() {
 
     return (  
