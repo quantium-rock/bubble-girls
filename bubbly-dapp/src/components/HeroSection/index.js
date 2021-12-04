@@ -1,29 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, Column1, TextWrapper, TopLine, SuperTitle, Heading2, Subtitle, Column2, ImgWrap, Img, ActionBtn, ActionBtnLink } from './HeroElements';
 import Video from '../../videos/video11.mp4';
 import { FaDiscord, FaTwitter, FaReddit } from 'react-icons/fa';
-import { InfoRow, SocialMedia, SocialMediaWrap, SocialIcons,  SocialIconLink, InfoWrapper } from './HeroElements';
+import { InfoRow, SocialMedia, SocialMediaWrap, SocialIcons,  SocialIconLink, ImgWrapper } from './HeroElements';
 import img from '../../images/girl-front.png';
 
 
 function HeroSection() {
 
-    const [ hover, setHover ] = useState(false);
-
-    const onHover = () => {
-        setHover(!hover);
-    };
-
-    const videoRef= VideoBg;
-    const setPlayBack = () => {
-        VideoBg.playbackRate = '1';
-      };
-
-    return (
-        
+    return (  
         <HeroContainer>
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} onCanPlay={() => setPlayBack()} type='video/mp4' />
+                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
                 <InfoRow>
@@ -36,13 +24,13 @@ function HeroSection() {
                         <SocialMedia>
                             <SocialMediaWrap>
                                 <SocialIcons>
-                                    <SocialIconLink href="//www.discord.com/" target="@0friendsclub" aria-label="Discord">
+                                    <SocialIconLink href="https://discord.gg/RESGyJNJzR" target="_blank" aria-label="Discord">
                                         <FaDiscord />
                                     </SocialIconLink>
-                                    <SocialIconLink href="//www.twitter.com/" target="@0friendsclub" aria-label="Twitter">
+                                    <SocialIconLink href="https://www.twitter.com/bubblegirlsnfts" target="_blank" aria-label="Twitter">
                                         <FaTwitter />
                                     </SocialIconLink>
-                                    <SocialIconLink href="//www.reddit.com/" target="_blank" aria-label="Reddit">
+                                    <SocialIconLink href="https://www.reddit.com/u/bubblegirlsnft" target="_blank" aria-label="Reddit">
                                         <FaReddit />
                                     </SocialIconLink>
                                 </SocialIcons>
@@ -54,11 +42,11 @@ function HeroSection() {
                     </TextWrapper>
                 </Column1>
                 <Column2>
-                    <InfoWrapper>
+                    <ImgWrapper>
                         <ImgWrap>
                             <Img src={img} />
                         </ImgWrap>
-                    </InfoWrapper>
+                    </ImgWrapper>
                 </Column2>
                 
                 </InfoRow>

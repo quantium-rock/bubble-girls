@@ -14,7 +14,6 @@ export const FooterWrap = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1100px;
     margin: 0 auto; 
 `;
 
@@ -45,8 +44,7 @@ export const FooterLinkItems = styled.div`
     boz-sizing: border-box;
     color: ${COLORS.white};
     
-    @media screen and (max-width: 420px) {
-        margin: 0;
+    @media screen and (max-width: 888px) {
         padding: 10px;
         width: 100%;
     }
@@ -72,6 +70,13 @@ export const FooterLink = styled(Link)`
 export const SocialMedia = styled.section`
     max-width: 1000px;
     width: 100%;
+
+    @media screen and (max-width: 888px) {
+        flex-direction: column;
+        margin: 44px;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const SocialMediaWrap = styled.div` 
@@ -81,8 +86,11 @@ export const SocialMediaWrap = styled.div`
     max-width: 1100px;
     margin: 40px auto 0 auto;
 
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 888px) {
         flex-direction: column;
+        margin: 14px;
+        justify-content: center;
+        align-items: center;
     }
 `;
 
@@ -108,6 +116,7 @@ export const SocialIcons = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 240px;
+    margin: 12px;
 `;
 
 export const SocialIconLink = styled.a`

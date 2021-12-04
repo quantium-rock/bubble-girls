@@ -12,6 +12,12 @@ export const InfoContainer = styled.div`
     @media screen and (max-width: 768px) {
         padding: 100px 20px;
     }
+
+    @media screen and (max-width: 666px) {
+        height: 1200px;
+        align-items: center;
+        justify-content: center;
+    }
 `;
 
 export const InfoWrapper = styled.div`
@@ -24,6 +30,11 @@ export const InfoWrapper = styled.div`
     margin-left: auto;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        max-width: 666px;
+        margin-left: -22px;
+    }
 `;
 
 export const InfoRow = styled.div`
@@ -33,17 +44,27 @@ export const InfoRow = styled.div`
     justify-content: center;
     grid-template-areas: 'col1 col2 col3';
 
-    @media screen and (max-width: 768px) {
-        grid-template-areas: 'col1 col1' 'col2 col2' 'col3 col3';
+    @media screen and (max-width: 444px) {
+        grid-template-areas: 'col1' 'col2' 'col3';
+        margin: 24px;
     }
 `;
 
 
 export const Column1 = styled.div`
     grid-area: col1;
-    width: 220px;
+    width: 144px;
     align-items: right;
 
+    @media screen and (max-width: 888px) {
+        width: 200px;
+    }
+
+    @media screen and (max-width: 666px) {
+        width: 100px;
+        align-items: center;
+        justify-content: center;
+    }
 `;
 
 export const Column2 = styled.div`
@@ -51,11 +72,22 @@ export const Column2 = styled.div`
     width: 680px;
     align-items: left;
 
+    @media screen and (max-width: 888px) {
+        width: 444px;
+    }
+
+    @media screen and (max-width: 666px) {
+        width: 333px;
+    }
 `;
 
 export const Column3 = styled.div`
     grid-area: col3;
-    width: 280px;
+    width: 144px;
+
+    @media screen and (max-width: 888px) {
+        width: 88px;
+    }
 `;
 
 export const Number = styled.p`
@@ -63,14 +95,15 @@ export const Number = styled.p`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 77px;
- 
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     display: flex;
     text-align: right;
 
-  
+    @media screen and (max-width: 888px) {
+        font-size: 33px;
+    }
 `;
 
 export const TextWrapper = styled.div`
@@ -85,20 +118,24 @@ export const TitleWrapper = styled.div`
     justify-content: center;
     margin-top: 66px;
     margin-bottom: 33px;
+
 `;
 
 export const Date = styled.p`
     background: -webkit-linear-gradient(90deg,${COLORS.tertiary}, ${COLORS.secondary}, ${COLORS.primary} );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 77px;
+    font-size: 50px;
  
     font-weight: 400;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     display: flex;
     text-align: right;
-  
+
+    @media screen and (max-width: 888px) {
+        font-size: 22px;
+    }
 `;
 
 export const Text = styled.h1`
@@ -109,8 +146,14 @@ export const Text = styled.h1`
     color: ${COLORS.white2};
     text-align: left;
 
-    @media screen and (max-width: 480px) {
-        font-size: 32px;
+    @media screen and (max-width: 888px) {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    @media screen and (max-width: 666px) {
+        font-size: 14px;
+        margin: 8px;
     }
 `;
 
@@ -133,8 +176,8 @@ export const Title = styled.h1`
     justify-content: center;
     text-align: center;
 
-    @media screen and (max-width: 480px) {
-        font-size: 32px;
+    @media screen and (max-width: 666px) {
+        font-size: 44px;
     }
 `;
 

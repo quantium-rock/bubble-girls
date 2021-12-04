@@ -81,6 +81,12 @@ export const Column3 = styled.div`
 export const TextWrapper = styled.div`
     max-width: 1048px;
     padding: 22px;
+
+    @media screen and (max-width: 666px) {
+        width: 280px;
+        align-items: center;
+        justify-content: center;
+    }
 `;
 
 export const TopLine = styled.p`
@@ -139,4 +145,9 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-left: 12px;
+
+    @media screen and (max-width: 666px) {
+        width: 90%;
+        margin-bottom: 24px;
+    }
 `;
