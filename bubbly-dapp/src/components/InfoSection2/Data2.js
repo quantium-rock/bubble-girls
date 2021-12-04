@@ -11,7 +11,7 @@ export const About = {
     topLine: 'BUBBLE GIRLS SOLANA PROJECT',
     headline: 'The revolution of NFTs, Music & Metaverse ',
     description: "BubbleGirls 1st generation 750 unique NFT that will give access to a Metaverse party-room.",
-    description1: "* NFT: BubbleGirls collection will be launched in Solana as one of the most efficents blockchain.",
+    description1: "* NFT: Our holders will have incredible ",
     description2: "* MUSIC: We are developing Bubbly Dapp, which will connect artists and fans through NFTs.",
     description3: "* METAVERSE: We aim to invest in Land to create our own private meta-parties with the best artists!",
     buttonLabel: 'Get started',
