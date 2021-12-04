@@ -3,7 +3,9 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import HeroSection from '../components/HeroSection';
 import InfoSection2 from '../components/InfoSection2';
-import { About, Rarities, Gamearn, Roadmap } from '../components/InfoSection2/Data2';
+import InfoSection3 from '../components/InfoSection3';
+import RoadMap from '../components/InfoSection3/Data3';
+import { About, Music, Metaverse, Roadmap, Team } from '../components/InfoSection2/Data2';
 import Footer from '../components/Footer';
 
 
@@ -21,11 +23,7 @@ const Home = () => {
             <Navbar toggle={toggle} />
             <HeroSection />
             <InfoSection2 {...About} />
-            <InfoSection2 {...Rarities} />
-            
-
-
-
+            <InfoSection3  {...RoadMap}/>
             <Footer />
         </>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '../Buttons';
-import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Heading, Subtitle, Subtitle2, BtnWrap, Column2, ImgWrap, Img } from './InfoElements';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, TextWrapper, TopLine, Heading, Subtitle, Subtitle2, BtnWrap, Column2, ImgWrap } from './InfoElements';
 import Card from '../CardComponent/CardComponent.tsx';
 
 function InfoSection( {lightBg, id, imgStart, topLine, headline, lightText, lightTextDesc, lightTextDesc2, description, description1, description2, description3, buttonLabel, img, alt, primary, dark, dark2 } ) {

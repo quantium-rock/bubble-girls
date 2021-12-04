@@ -3,8 +3,8 @@ import COLORS from "../Colors";
 
 export const InfoContainer = styled.div`
     color: ${ ({lightBg}) => ( lightBg ? COLORS.white2 : COLORS.black2 ) };
-    background: ${ ({lightBg}) => ( lightBg ? COLORS.white2 : COLORS.black2 ) };
-    height: 2048px;
+    background: ${ ({lightBg}) => ( lightBg ? COLORS.trans1 : COLORS.black2 ) };
+    height: 1048px;
     width: 100%;
     z-index: 6;
     position: relative;
@@ -17,7 +17,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 7;
-    height: 2048px;
+    height: 1048px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;

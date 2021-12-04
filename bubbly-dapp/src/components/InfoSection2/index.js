@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button } from '../Buttons';
-import { InfoContainer, InfoWrapper, InfoRow, InfoRow2, Column1, Column2, Column3, TextWrapper, TopLine, Heading, Subtitle, Subtitle2, BtnWrap, ImgWrap, Img } from './InfoElements2';
-import Card from '../CardComponent/CardComponent.tsx';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, Subtitle2, BtnWrap, ImgWrap, Img } from './InfoElements2';
 
 function InfoSection2( {lightBg, id, imgStart, topLine, headline, lightText, lightTextDesc, lightTextDesc2, description, description1, description2, description3, buttonLabel, img, alt, primary, dark, dark2 } ) {
     return (
@@ -16,7 +15,6 @@ function InfoSection2( {lightBg, id, imgStart, topLine, headline, lightText, lig
                             <Subtitle2 lightTextDesc={lightTextDesc}>{description1}</Subtitle2>
                             <Subtitle2 lightTextDesc={lightTextDesc}>{description2}</Subtitle2>
                             <Subtitle2 lightTextDesc={lightTextDesc}>{description3}</Subtitle2>
-
                             <BtnWrap>
                                 <Button to='home' smooth={true} duration={500} spy={true} exact="true" offset={-80} primary={primary ? 1 : 0} dark={dark ? 1 : 0} dark2={dark2 ? 1 : 0}>{buttonLabel}</Button>
                             </BtnWrap>
@@ -28,24 +26,6 @@ function InfoSection2( {lightBg, id, imgStart, topLine, headline, lightText, lig
                         </ImgWrap>
                     </Column2>
                 </InfoRow>
-            
-                <InfoRow2>
-                    <Column1>
-                        <ImgWrap>
-                            <Card/>
-                        </ImgWrap>
-                    </Column1>
-                    <Column2>
-                        <ImgWrap>
-                            <Card/>
-                        </ImgWrap>
-                    </Column2>
-                    <Column3>
-                        <ImgWrap>
-                            <Card/>
-                        </ImgWrap>
-                    </Column3>
-                </InfoRow2>
             </InfoWrapper>
         </InfoContainer>
     );

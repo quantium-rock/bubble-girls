@@ -16,42 +16,38 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Index</FooterLinkTitle>
+                            <FooterLink to='home'>Home</FooterLink>
                             <FooterLink to='about'>About</FooterLink>
-                            <FooterLink to='rarities'>Rarities</FooterLink>
-                            <FooterLink to='gamearn'>Gamearn</FooterLink>
                             <FooterLink to='roadmap'>Roadmap</FooterLink>                 
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Community</FooterLinkTitle>
-                            <FooterLink to='/signin'>Discord</FooterLink>
-                            <FooterLink to='/signin'>Twitter</FooterLink>
-                            <FooterLink to='/signin'>Reddit</FooterLink>
-                            <FooterLink to='/signin'>Instagram</FooterLink>                    
+                            <FooterLink to='/'>Discord</FooterLink>
+                            <FooterLink to='/'>Twitter</FooterLink>
+                            <FooterLink to='/'>Reddit</FooterLink>                
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Markets</FooterLinkTitle>
-                            <FooterLink to='/'>Artentic.nft</FooterLink> 
                             <FooterLink to='/'>Solanart.io</FooterLink>
                             <FooterLink to='/'>Margiceden.io</FooterLink>
                             <FooterLink to='/'>Opensea.io</FooterLink>                  
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Governance</FooterLinkTitle>
-                            <FooterLink to='/terms'>Terms</FooterLink>
-                            <FooterLink to='/privacy'>Privacy</FooterLink>
-                            <FooterLink to='/charity'>Charity</FooterLink>
-                            <FooterLink to='/solana'>Solana</FooterLink>                 
+                            <FooterLink to='/'>Terms</FooterLink>
+                            <FooterLink to='/'>Privacy</FooterLink>
+                            <FooterLink to='/'>Charity</FooterLink>             
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/' onClick={toggleHome}>
-                            0friendsclub
+                            BUBBLEGIRLS
                         </SocialLogo>
-                        <WebsiteRights>0friendsclub © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                        <WebsiteRights>BubbleGirls © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href="//www.discord.com/" target="@0friendsclub" aria-label="Discord">
                                 <FaDiscord />
@@ -61,9 +57,6 @@ const Footer = () => {
                             </SocialIconLink>
                             <SocialIconLink href="//www.reddit.com/" target="_blank" aria-label="Reddit">
                                 <FaReddit />
-                            </SocialIconLink>
-                            <SocialIconLink href="//www.instagram.com/" target="_blank" aria-label="Instagram">
-                                <FaInstagram />
                             </SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>

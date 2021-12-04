@@ -6,6 +6,8 @@ export const InfoContainer = styled.div`
     background: ${ ({lightBg}) => ( lightBg ? COLORS.white2 : COLORS.black2 ) };
     height: 1000px;
     width: 100%;
+    z-index: 6;
+    position: relative;
 
     @media screen and (max-width: 768px) {
         padding: 100px 20px;
@@ -14,7 +16,7 @@ export const InfoContainer = styled.div`
 
 export const InfoWrapper = styled.div`
     display: grid;
-    z-index: 1;
+    z-index: 7;
     height: 860px;
     width: 100%;
     max-width: 1100px;

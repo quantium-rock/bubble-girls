@@ -13,6 +13,7 @@ export const COLORS = {
     black2: "#010606",
     grey: "#232a34",
     grey2: "#101522",
+    trans1: "rgba(0, 0, 0, 0.9)"
     
 }
 

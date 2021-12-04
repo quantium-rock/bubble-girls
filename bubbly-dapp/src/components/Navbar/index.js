@@ -30,7 +30,7 @@ const Navbar = ({ toggle }) => {
         <IconContext.Provider value={{color:'#fff'}}>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to="/" onClick={toggleHome}>BUBBLEGIRLS TEST</NavLogo>
+                    <NavLogo to="/" onClick={toggleHome}>BUBBLEGIRLS</NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars/>
                     </MobileIcon>
@@ -39,19 +39,7 @@ const Navbar = ({ toggle }) => {
                             <NavLinks to="1" smooth={true} duration={500} spy={true} exact="true" offset={-80}>About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="0" smooth={true} duration={500} spy={true} exact="true" offset={-80}>NFT</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="2" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Music</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="3" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Metaverse</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="4" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Roadmap</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="5" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Team</NavLinks>
+                            <NavLinks to="2" smooth={true} duration={500} spy={true} exact="true" offset={-80}>Roadmap</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavbarWalletBtn>

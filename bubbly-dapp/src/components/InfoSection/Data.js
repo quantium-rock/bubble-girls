@@ -23,7 +23,7 @@ export const About = {
     darkText: false
 };
 
-export const Rarities = {
+export const NFT = {
     id: '2',
     lightBg: true,
     lightText: false,
@@ -40,7 +40,7 @@ export const Rarities = {
     darkText: false
 };
 
-export const Gamearn = {
+export const Music = {
     id: '3',
     lightBg: false,
     lightText: true,
@@ -57,8 +57,42 @@ export const Gamearn = {
     darkText: false
 };
 
-export const Roadmap = {
+export const Metaverse = {
     id: '4',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Premium Bank',
+    headline: 'Unlimited Transactions with zero fees',
+    description: 'Get accesss to our exclusive app that allows you to send unlimited transaction with 0 fees. ',
+    buttonLabel: 'Get started',
+    imgStart: true,
+    img: img4,
+    alt: '',
+    dark: false,
+    primary: false,
+    darkText: false
+};
+
+export const Roadmap = {
+    id: '5',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Premium Bank',
+    headline: 'Unlimited Transactions with zero fees',
+    description: 'Get accesss to our exclusive app that allows you to send unlimited transaction with 0 fees. ',
+    buttonLabel: 'Get started',
+    imgStart: true,
+    img: img4,
+    alt: '',
+    dark: false,
+    primary: false,
+    darkText: false
+};
+
+export const Team = {
+    id: '5',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
