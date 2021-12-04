@@ -23,7 +23,7 @@ function HeroSection() {
                         <SocialMedia>
                             <SocialMediaWrap>
                                 <SocialIcons>
-                                    <SocialIconLink href="https://discord.gg/RESGyJNJzR" target="_blank" aria-label="Discord">
+                                    <SocialIconLink href="https://www.discord.gg/RESGyJNJzR" target="_blank" aria-label="Discord">
                                         <FaDiscord />
                                     </SocialIconLink>
                                     <SocialIconLink href="https://www.twitter.com/bubblegirlsnfts" target="_blank" aria-label="Twitter">

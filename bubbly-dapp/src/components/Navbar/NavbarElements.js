@@ -11,14 +11,21 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    position: sticky;
+    position: sticky !important;
     top: 0;
-    z-index: 10;
+    z-index: 100;
     text-decoration: none;
-    
 
+    margin-left:0;
+    margin-right:0;
+    padding-left:0;
+    padding-right:0;
+    
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
+        height: 86px;
+        margin-top: -86px;
+
     }
 `;
 

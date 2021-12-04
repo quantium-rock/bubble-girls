@@ -12,6 +12,7 @@ export const InfoContainer = styled.div`
     @media screen and (max-width: 768px) {
         padding: 100px 20px;
         height: 1148px;
+        width: 100%;
     }
 `;
 
@@ -35,8 +36,8 @@ export const InfoRow = styled.div`
     justify-content: center;
     grid-template-areas: ${ ({imgStart}) => ( imgStart ? `'col2 col1'` : `'col1 col2'` ) };
 
-    @media screen and (max-width: 768px) {
-        grid-template-areas: 'col1 col1' 'col2 col2';
+    @media screen and (max-width: 900px) {
+        grid-template-areas: 'col1 col2'
     }
 `;
 

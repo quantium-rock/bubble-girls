@@ -13,31 +13,25 @@ export const HeroContainer = styled.div`
     position: relative;
     z-index: 1;
     width: 100%;
+    overflow-x: hidden;
 
-    :before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient( 180deg, rgba(0,0,0,0.2) 0%,  rgba(0,0,0,0.6) 100% ), linear-gradient( 180deg, rgba(0,0,0,0.2) 0%, transparent 100% );
-        z-index: 2;
-        width: 100%;
+    @media screen and (max-width: 900px) {
+        justify-content: left;
+        align-items: left;
     }
 
 `;
 
 export const HeroBg = styled.div`
-    position: absolute;
+    position: relativo;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     background: transparent;
+    overflow-x: hidden;
 `;
 
 export const VideoBg = styled.video`
@@ -47,9 +41,9 @@ export const VideoBg = styled.video`
     object-fit: cover;
     background: transparent;
     filter: brightness(100%);
-
     position: fixed;
     z-index: 1;
+    overflow-x: hidden;
 `;
 
 export const HeroContent = styled.div`
@@ -117,7 +111,7 @@ export const ImgWrapper = styled.div`
     align-items: center;
 
     @media screen and (max-width: 888px) {
-        max-width: 444px;
+        max-width: 111px;
         z-index: 11;
         position: relative;
     }
@@ -141,7 +135,7 @@ export const Column1 = styled.div`
     align-items: center;
     text-align: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 888px) {
         margin-left: 30%;
     }
 `;
@@ -152,8 +146,8 @@ export const Column2 = styled.div`
     grid-area: col2;
     margin: 60px;
 
-    @media screen and (max-width: 800px) {
-        display: flex;
+    @media screen and (max-width: 888px) {
+        margin-right: 30%;
     }
 `;
 
@@ -260,8 +254,6 @@ export const Heading2 = styled.h2`
     &:hover {
         text-shadow: 0px 0px 57px ${COLORS.primary};
     }
-
-
 `;
 
 export const Subtitle = styled.h2`
@@ -296,20 +288,23 @@ export const ImgWrap = styled.div`
     margin-bottom: -70px;
     position: fixed;
     z-index: 4;
- 
+    overflow-x: hidden;
+
+    @media screen and (max-width: 888px) {
+        height: 220px;
+        padding: 12px;
+    }
+
 `;
 
 export const Img = styled.img`
     width: 888px;
     transition: 2.2s ease-in-out;
+    overflow-x: hidden;
 
     &:hover {
         transition: 2.2s ease-in-out;
         width: 1277px;      
-    }
-
-    @media screen and (max-width: 666x) {
-        width: 444px;
     }
 
 `;
@@ -380,7 +375,6 @@ export const ActionBtnRoute = styled(LinkR)`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     font-weight: bold;
-
 
     &:hover {
         font-size: 16px;
