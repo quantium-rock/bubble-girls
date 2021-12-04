@@ -308,8 +308,8 @@ export const Img = styled.img`
         width: 1277px;      
     }
 
-    @media screen and (max-width: 480px) {
-        width: 111px;
+    @media screen and (max-width: 666x) {
+        width: 444px;
     }
 
 `;

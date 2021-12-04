@@ -29,10 +29,10 @@ const Footer = () => {
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>Markets</FooterLinkTitle>
-                            <FooterLink to='https://www.solanart.io'>Solanart.io</FooterLink>
-                            <FooterLink to='https://www.margicedeon.io'>Margiceden.io</FooterLink>
-                            <FooterLink to='https://www.opensea.com'>Opensea.com</FooterLink>                  
+                            <FooterLinkTitle>Solana Markets</FooterLinkTitle>
+                            <FooterLink to='https://www.digitaleyes.market' target="_blank" aria-label="Digitaleyes">Digitaleyes</FooterLink>
+                            <FooterLink to='https://www.margicedeon.io' target="_blank" aria-label="Margiceden">Margiceden</FooterLink>
+                            <FooterLink to='https://www.solsea.io' target="_blank" aria-label="Soleea">Solsea</FooterLink>                  
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Governance</FooterLinkTitle>

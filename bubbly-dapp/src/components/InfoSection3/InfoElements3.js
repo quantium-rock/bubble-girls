@@ -13,11 +13,6 @@ export const InfoContainer = styled.div`
         padding: 100px 20px;
     }
 
-    @media screen and (max-width: 666px) {
-        height: 1200px;
-        align-items: center;
-        justify-content: center;
-    }
 `;
 
 export const InfoWrapper = styled.div`
