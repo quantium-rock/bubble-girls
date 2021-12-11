@@ -184,7 +184,6 @@ export const NavbarWalletBtnRoute = styled(LinkR)`
     text-decoration: none;
     font-weight: bold;
 
-
     &:hover {
         font-size: 16px;
         background-position: right 200px;
@@ -212,7 +211,6 @@ export const NavbarWalletBtnConnect = styled.div`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     font-weight: bold;
-
 
     &:hover {
         font-size: 16px;

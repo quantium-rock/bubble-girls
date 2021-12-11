@@ -110,6 +110,8 @@ export const ImgWrapper = styled.div`
     justify-content: center;
     align-items: center;
 
+    overflow: hidden;
+
     @media screen and (max-width: 888px) {
         max-width: 111px;
         z-index: 11;
@@ -288,7 +290,8 @@ export const ImgWrap = styled.div`
     margin-bottom: -70px;
     position: fixed;
     z-index: 4;
-    overflow-x: hidden;
+    overflow: hidden;
+
 
     @media screen and (max-width: 888px) {
         height: 220px;
@@ -300,7 +303,7 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
     width: 888px;
     transition: 2.2s ease-in-out;
-    overflow-x: hidden;
+    overflow: hidden;
 
     &:hover {
         transition: 2.2s ease-in-out;
