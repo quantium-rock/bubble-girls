@@ -1,11 +1,13 @@
 import React from 'react';
-import { HeroContainer, HeroBg, VideoBg, HeroContent, Column1, TextWrapper, TopLine, SuperTitle, Heading2, Subtitle, Column2, ImgWrap, Img, ActionBtn, ActionBtnLink } from './HeroElements';
+import { HeroContainer, HeroBg, VideoBg, HeroContent, Column1, TextWrapper, TopLine, SuperTitle, Heading2, Subtitle, Column2, ImgWrap, Img, ActionBtn, MintLinkBtn } from './HeroElements';
 import Video from '../../videos/video11.mp4';
 import { FaDiscord, FaTwitter, FaReddit } from 'react-icons/fa';
 import { InfoRow, SocialMedia, SocialMediaWrap, SocialIcons,  SocialIconLink, ImgWrapper } from './HeroElements';
 import img from '../../images/girl-front.png';
 
 function HeroSection() {
+
+    const MintSide = () => { window.open("https://mint-bubblegirlsnft.vercel.app/"); };
 
     return (  
         <HeroContainer>
@@ -36,7 +38,7 @@ function HeroSection() {
                             </SocialMediaWrap>
                         </SocialMedia>
                         <ActionBtn>
-                            <ActionBtnLink to="1" smooth={true} duration={500} spy={true} exact="true" offset={-80}>CANDY MACHINE</ActionBtnLink>
+                            <MintLinkBtn onClick={MintSide}>CANDY MACHINE</MintLinkBtn>
                         </ActionBtn>                  
                     </TextWrapper>
                 </Column1>

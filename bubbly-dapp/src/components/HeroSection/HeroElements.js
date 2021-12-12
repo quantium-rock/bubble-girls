@@ -417,3 +417,33 @@ export const ActionBtnLink = styled(LinkS)`
         text-decoration: none;
     } 
 `;
+
+export const MintLinkBtn = styled.button`
+    background-image: linear-gradient(to right, ${COLORS.primary} 0%, ${COLORS.secondary}  100%, ${COLORS.tertiary}  200%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: ${COLORS.white};            
+    box-shadow: 0 0 7px ${COLORS.tertiary};
+    border-radius: 50px;
+    display: block;
+    white-space: nowrap;
+    padding: 10px 22px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+
+
+    &:hover {
+        font-size: 16px;
+        background-position: right 200px;
+        color: ${COLORS.black};
+        box-shadow: 0 0 14px ${COLORS.secondary};
+        text-decoration: none;
+    } 
+`;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { InfoContainer, InfoWrapper, Title, InfoRow, Column1, Column2, Column3, TextWrapper, TitleWrapper, Number, Text, Date } from './InfoElements3';
+import { InfoContainer, InfoWrapper, Title, InfoRow, Column1, Column2, Column3, TextWrapper, TitleWrapper, Number, Text, Date } from './CollectionElements';
 
 function InfoSection2( { id, stage1, stage2, stage3, stage4, stage5, stage6 } ) {
     return (
